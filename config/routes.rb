@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+
+  #scope "(:locale)", locale: /en|de/ do
+   # resources :welcome
+  #end
+
+  #get '/:locale' => 'dashbroad#index'
+
   get 'welcome/index'
+  get 'welcome/room'
+  get 'welcome/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

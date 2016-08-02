@@ -1,2 +1,12 @@
-<h2>Welcome#index</h2>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="wellcome" class="page-wellcome">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id="title-hello" class="title-hello"><span>kuku</span></div>
+      <%=t :hello%>
+
+      <%=image_tag('hotel_logo.jpg', size: '50x50') %>
+
+      <%= link_to "room", welcome_room_path %>
+    </div>
+  </div>
+</div>

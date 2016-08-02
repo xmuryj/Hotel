@@ -1,9 +1,35 @@
 @import "bootstrap";
+@import "hotel/variables";
 
-h1{
-  color: forestgreen;
+
+.page-header {
+  margin: 0;
+
+  font-family: $hotelStandardFontFamily;
+  font-size: $hotelHeaderFontSize2;
+  background: #680609;
+
+  height: 80px;
+
+  .brand
+  {
+    color: darkorange;
+    background:$hotelLogo;
+    background-size: 80px 50px;
+    float: left;
+  }
+  .logo
+  {
+    color: darkorange;
+  }
+  .land
+  {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: large;
+    color: whitesmoke;
+  }
 }
+#title-hello.title-hello {
 
-h2{
-  color: #B00100;
+  color: #730E15;
 }

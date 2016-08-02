@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hotel %=%</title>
+  <title><%=page_title%></title>
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut-icon" href="favicon.ico">
+  <%= favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+  <%= favicon_link_tag '/apple-touch-icon.png', rel: 'icon', type: 'image/png' %>
+
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <%= render 'layouts/page_header' %>
+<%= render 'layouts/menu' %>
 
 <%= yield %>
 
