@@ -3,15 +3,17 @@
     <div class="container-fluid">
       <nav class="row-fluid">
         <div class="span6">
-          <li class="active">
-            <%= link_to "Wellcome", welcome_index_path, class: "call-to-action" %>
-          </li>
-          <li class="active">
-            <%= link_to "Rooms", welcome_room_path, class: "call-to-action" %>
-          </li>
-          <li class="active">
-            <%= link_to "Kontact", welcome_contact_path, class: "call-to-action" %>
-          </li>
+          <ul class="nav nav-pills">
+              <li class="active">
+                <%= link_to "Wellcome", welcome_index_path, class: "call-to-action" %>
+              </li>
+              <li class="active">
+                <%= link_to "Rooms", welcome_room_path, class: "call-to-action" %>
+              </li>
+              <li class="active">
+                <%= link_to "Kontact", welcome_contact_path, class: "call-to-action" %>
+              </li>
+          </ul>
         </div>
       </nav>
     </div>
