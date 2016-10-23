@@ -1,3 +1,7 @@
+<% content_for(:head) do %>
+    <%= javascript_include_tag "bootstrap-min.js"%>
+<% end %>
+
 <div id="wellcome" class="page-wellcome">
   <div class="container-fluid">
     <div class="row-fluid">
@@ -9,4 +13,7 @@
       <%= link_to "room", welcome_room_path %>
     </div>
   </div>
+
+  <img src= "hotel_logo.jpg"  height="100%"  width="auto">
+
 </div>

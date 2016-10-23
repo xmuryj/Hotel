@@ -1,20 +1,28 @@
 Rails.application.routes.draw do
 
+
+  scope "(:locale)", :locale => /en|de|ru/ do
+    root :to => 'welcome#index'
+    get "welcome/index"
+    get "welcome/room"
+    get 'welcome/contact'
+  end
+
   #scope "(:locale)", locale: /en|de/ do
    # resources :welcome
   #end
 
   #get '/:locale' => 'dashbroad#index'
 
-  get 'welcome/index'
-  get 'welcome/room'
-  get 'welcome/contact'
+  #get 'welcome/index'
+  #get 'welcome/room'
+  #get 'welcome/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  #root 'welcome#index'
   #root :to => 'welcome#index', :via => :get
 
   # Example of regular route:

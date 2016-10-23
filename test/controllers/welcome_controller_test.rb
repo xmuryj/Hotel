@@ -5,5 +5,8 @@ class WelcomeControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
-
+  test "should get room" do
+    get :room
+    assert_response :success
+  end
 end

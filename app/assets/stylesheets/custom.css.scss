@@ -2,7 +2,7 @@
 @import "hotel/variables";
 
 
-.page-header {
+.hotel-header {
   margin: 0;
 
   font-family: $hotelStandardFontFamily;
@@ -15,18 +15,35 @@
   {
     color: darkorange;
     background:$hotelLogo;
-    background-size: 80px 50px;
-    float: left;
   }
-  .logo
-  {
-    color: darkorange;
-  }
+
   .land
   {
     font-family: "Helvetica Neue", "Arial", sans-serif;
     font-size: large;
     color: whitesmoke;
+    background: #680609;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+
+    .btn:focus, .btn:active,
+    .btn-default:focus, .btn-default:active{
+      outline: none !important;
+      border: none !important;
+    }
+
+    .btn{
+      background: #680609;
+      color: whitesmoke;
+      border: none !important;
+    }
+    ul.dropdown-menu,
+    ul.dropdown-menu > li > a{
+      border-color: #680609;
+      background: #680609;
+    }
   }
 }
 #title-hello.title-hello {

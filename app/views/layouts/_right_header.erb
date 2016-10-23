@@ -1,3 +1,8 @@
 <div class="land pull-right">
-  <div class="beta-indicator"><span>7.3 Alpha</span></div>
+  <p>
+    <%= link_to_unless I18n.locale == :en, image_tag('nav_eng.jpg', size: '52x32'), locale: :en %>
+    |
+    <%= link_to_unless I18n.locale == :de, image_tag('nav_deu.jpg', size: '52x32'), locale: :de %>
+
+  </p>
 </div>

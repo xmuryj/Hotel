@@ -1,0 +1,16 @@
+<div class="land pull-right">
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+      <%= I18n.locale %>
+    </button>
+    <ul class="dropdown-menu">
+      <% I18n.available_locales.each do |available_locale| %>
+          <% if available_locale != I18n.locale %>
+              <li class="lnd-btn active">
+                <%= link_to available_locale, url_for(locale: available_locale), class: "call-to-action" %>
+              </li>
+          <%end%>
+      <%end%>
+    </ul>
+  </div>
+</div>
