@@ -6,7 +6,7 @@ ruby '2.3.1'
 gem 'rails', '4.2.6'
 
 # Use pg as the database for Active Record
-gem 'pg',             "=0.17.1"
+gem 'pg'#,             "=0.17.1"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

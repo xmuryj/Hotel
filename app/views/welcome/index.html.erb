@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="row-fluid">
       <div id="title-hello" class="title-hello"><span>kuku</span></div>
-      <%=t :hello%>
+      <%=t('hello')%>
 
       <%=image_tag('hotel_logo.jpg', size: '50x50') %>
 
@@ -14,6 +14,6 @@
     </div>
   </div>
 
-  <img src= "hotel_logo.jpg"  height="100%"  width="auto">
+  <%=image_tag('hotel_logo.jpg', height: '100%', width: 'auto') %>
 
 </div>

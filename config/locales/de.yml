@@ -1,3 +1,12 @@
 
 de:
   hello: "Hi Welt"
+
+  user:
+    forename: "Vorname"
+    surname: "Nachname"
+    address_str: "Strasse"
+    address_hause: "Haus-Nr."
+    address_zip: "Postleitzahl"
+    address_city: "Stadt"
+    address_count: "Land"

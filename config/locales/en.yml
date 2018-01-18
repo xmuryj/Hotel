@@ -21,3 +21,13 @@
 
 en:
   hello: "Hello world"
+
+
+  user:
+    forename: "forename"
+    surname: "surname"
+    address_str: "street"
+    address_hause: "hause"
+    address_zip: "ZIP"
+    address_city: "city"
+    address_count: "country"

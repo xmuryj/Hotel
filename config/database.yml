@@ -9,9 +9,16 @@ default: &default
   pool: 5
   timeout: 5000
 
+my_postgres: &my_postgres
+  adapter: postgresql
+  encoding: unicode
+  username: dimi
+  password: enot273
+
 development:
+  #<<: *my_postgres
   <<: *default
-  database: db/development.sqlite3
+  database: db/hotel_db
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

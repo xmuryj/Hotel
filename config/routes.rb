@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
 
 
+
   scope "(:locale)", :locale => /en|de|ru/ do
+
     root :to => 'welcome#index'
+
+
     get "welcome/index"
     get "welcome/room"
     get 'welcome/contact'
+
+
+    resources :users
+
   end
 
   #scope "(:locale)", locale: /en|de/ do
