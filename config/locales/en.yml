@@ -22,6 +22,9 @@
 en:
   hello: "Hello world"
 
+  wellcome:
+    contact: "contact"
+
 
   user:
     forename: "forename"
@@ -31,3 +34,8 @@ en:
     address_zip: "ZIP"
     address_city: "city"
     address_count: "country"
+    email: "e-mail"
+    password: "password"
+    password_confirmation:      "password confirmation"
+
+

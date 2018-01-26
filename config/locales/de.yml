@@ -2,6 +2,9 @@
 de:
   hello: "Hi Welt"
 
+  wellcome:
+    contact: "Kontakt"
+
   user:
     forename: "Vorname"
     surname: "Nachname"
@@ -10,3 +13,6 @@ de:
     address_zip: "Postleitzahl"
     address_city: "Stadt"
     address_count: "Land"
+    email: "E-Mail"
+    password: "Passwort"
+    password_confirmation:       "Passwort Wiederholung"

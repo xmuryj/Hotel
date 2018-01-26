@@ -7,12 +7,9 @@ class UsersController < ApplicationController
   def create
     @user = User.create(params[:user])
 
-    if @user.forename.blank?
-      redirect_to welcome_contact_path
+    if @user.nik_name.blank?
+      redirect_to welcome_contact_pat
     end
   end
 
-  def show
-    @user = User.find(1)
-  end
 end
